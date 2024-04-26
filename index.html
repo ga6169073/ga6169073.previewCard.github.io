@@ -25,7 +25,7 @@
 
     body {
       display: flex;
-      max-width: 1440px;
+      /* max-width: 1440px; */
       padding: 218.5px 0px 219.5px 0px;
       justify-content: center;
       align-items: center;
@@ -182,7 +182,13 @@
       /* 21px */
     }
 
-    @media screen and (max-width: 740px) {
+    @media (min-width: 1440p) {
+      body {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 740px) {
       .body {
         display: flex;
         max-width: 375px;
